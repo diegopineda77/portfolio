@@ -2,23 +2,23 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
-Web developer
+alt = Diego Pineda
+Diego Pineda
+Cloud Engineer
 
 Show Contacts
 
 Email
-richard@example.com
+diego.pineda@gmail.com
 
 Phone
-+1 (213) 352-2795
++1 (403) 336-7124
 
 Birthday
-June 23, 1982
+Jan 14, 1977
 
 Location
-Sacramento, California, USA
+Calgary, Alberta, Canada
 
 # navbar
 
