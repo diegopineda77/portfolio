@@ -87,8 +87,8 @@ const filterFunc = function (selectedValue) {
     } else if (
       filterItems[i].dataset.category
         .split(",")
-        .map(category => category.trim())
-        .includes(selectedValue)
+        .map(category => category.trim().toLowerCase())
+        .includes(selectedValue.toLowerCase())
     ) {
       filterItems[i].classList.add("active");
     } else {

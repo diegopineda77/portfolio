@@ -40,15 +40,15 @@
     <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
-
-        <figure class="avatar-box">
+        <!-- Avatar       -->
+        <figure class="avatar-box" hidden>
           <img src="./assets/images/my-avatar.png" alt="Diego Pineda" width="80">
         </figure>
 
         <div class="info-content">
           <h1 class="name" title="Diego Pineda">Diego Pineda</h1>
 
-          <p class="title">Cloud Engineer</p>
+          <p class="title">Cloud Engineer / Architect</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -74,7 +74,8 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:diego.pineda@gmail.com" class="contact-link">diego.pineda@gmail.com</a>
+              <a href="mailto:diego.pineda@gmail.com" class="contact-link"
+                style="font-size: 0.85rem;">diego.pineda@gmail.com</a>
             </div>
 
           </li>
@@ -88,21 +89,7 @@
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">June 23, 1982</time>
+              <a href="tel:+14033367124" class="contact-link">+1 (403) 336-7124</a>
             </div>
 
           </li>
@@ -116,7 +103,7 @@
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Sacramento, California, USA</address>
+              <address>Calgary, AB, Canada</address>
             </div>
 
           </li>
@@ -128,20 +115,21 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a href="mailto:diego.pineda@gmail.com" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+            <a href="https://www.linkedin.com/in/diego-pineda-119ab377/" class="social-link" target="_blank"
+              rel="noopener noreferrer">
+              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
+            <a href="https://github.com/diegopineda77" class="social-link" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
 
@@ -181,11 +169,11 @@
             <button class="navbar-link" data-nav-link>Portfolio</button>
           </li>
 
-          <li class="navbar-item">
+          <li class="navbar-item" hidden>
             <button class="navbar-link" data-nav-link>Blog</button>
           </li>
 
-          <li class="navbar-item">
+          <li class="navbar-item" hidden>
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
 
@@ -209,45 +197,51 @@
 
         <section class="about-text">
           <p>
-            I'm a Cloud Engineer, working in cloud infrastructure and DevOps.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive solutions.
+            I’m a Solutions Architect with a strong interest in cloud architecture, infrastructure, networking, and
+            DevOps.
+            I enjoy designing, deploying, and troubleshooting cloud-based solutions with a focus on scalability,
+            security, reliability, and cost efficiency.
           </p>
 
           <p>
-            My job is to build your cloud infrastructure so that it is functional and user-friendly but at the same time
-            attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created cloud solutions for many famous brand companies.
+            My experience and hands-on projects include AWS and Azure, infrastructure as code with Terraform,
+            containerization with Docker, orchestration with Kubernetes, and CI/CD automation. I also have a strong
+            foundation in Linux, networking, Git, cloud security, databases, and distributed systems.
           </p>
         </section>
 
 
         <!--
-          - service
+          - Highlights
         -->
 
         <section class="service">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h3 class="h3 service-title">Skils</h3>
 
           <ul class="service-list">
 
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
+                <!-- <img src="./assets/images/icon-design.svg " alt="design icon" width="40">-->
+
               </div>
+
 
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Cloud Architecture</h4>
 
                 <p class="service-item-text">
-                  Designing and implementing scalable cloud solutions at a professional level.
+                  Designing and implementing scalable cloud solutions at a professional level in <b>AWS</b> and
+                  <b>Azure</b>.
                 </p>
+                <img class="provider-logo2" title="AWS" src="./assets/images/logo_AWS.png" alt="AWS logo" width="36"
+                  height="36">
+                <img class="provider-logo2" title="Microsoft Azure" src="./assets/images/logo_Azure.svg"
+                  alt="Microsoft Azure logo" width="36" height="36">
+                <!-- <img class="provider-logo2" title="Google Cloud Platform" src="./assets/images/logo_google-cloud.svg" 
+                alt="Google Cloud Platform logo" width="36" height="36">-->
               </div>
 
             </li>
@@ -255,15 +249,22 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Cloud development icon" width="40">
+                <!-- <img src="./assets/images/icon-design.svg" alt="Cloud development icon" width="40"> -->
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Cloud Architecture</h4>
+                <h4 class="h4 service-item-title">Monitoring</h4>
 
                 <p class="service-item-text">
-                  High-quality development of cloud applications at the professional level.
+                  Monitoring and optimizing cloud environments with a focus on performance, reliability, security, and
+                  cost control, continuously identifying opportunities for improvement and optimization.
                 </p>
+                <img class="provider-logo2" title="Grafana" src="./assets/images/logo_grafana.svg" alt="Grafana logo"
+                  width="36" height="36">
+                <img class="provider-logo2" title="Prometheus" src="./assets/images/logo_Prometheus.svg"
+                  alt="Grafana logo" width="36" height="36">
+                <img class="provider-logo2" title="Loki" src="./assets/images/logo_loki.svg" alt="Grafana logo"
+                  width="36" height="36">
               </div>
 
             </li>
@@ -271,15 +272,25 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
+                <h4 class="h4 service-item-title">Containerization & CI/CD</h4>
 
                 <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
+                  Designing and managing containerized environments using <b>Docker</b> and <b>Kubernetes</b>, while
+                  implementing
+                  CI/CD pipelines to automate application deployment and delivery processes.
+
                 </p>
+                <img class="provider-logo2" title="Docker" src="./assets/images/logo_docker.avif" alt="mobile app icon"
+                  width="40">
+                <img class="provider-logo2" title="Kubernetes" src="./assets/images/logo_Kuber.svg"
+                  alt="mobile app icon" width="40">
+                <img class="provider-logo2" title="GitHub Actions" src="./assets/images/logo_github-white.svg"
+                  alt="mobile app icon" width="40">
+                <img class="provider-logo2" title="Jenkins" src="./assets/images/logo_jenkins.svg" alt="mobile app icon"
+                  width="40">
               </div>
 
             </li>
@@ -287,15 +298,21 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
+                <h4 class="h4 service-item-title">Infrastructure as Code</h4>
 
                 <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
+                  Implementing Infrastructure as Code (IaC) and configuration management using <b>Terraform</b>,
+                  <b>CloudFormation</b> and <b>Ansible</b>,
+                  enabling consistent, automated, and repeatable infrastructure deployments.
                 </p>
+                <img class="provider-logo2" title="Terraform" src="./assets/images/logo_Terraform.svg"
+                  alt="Terraform logo" width="40">
+                <img class="provider-logo2" title="Ansible" src="./assets/images/logo_ansible.svg"
+                  alt="CloudFormation logo" width="40">
               </div>
 
             </li>
@@ -306,97 +323,82 @@
 
 
         <!--
-          - testimonials
+          - quotations
         -->
 
-        <section class="testimonials">
+        <section class="quotations">
 
-          <h3 class="h3 testimonials-title">Testimonials</h3>
+          <h3 class="h3 quotations-title">quotations</h3>
 
-          <ul class="testimonials-list has-scrollbar">
+          <ul class="quotations-list has-scrollbar">
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+            <li class="quotations-item">
+              <div class="content-card" data-quotations-item>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                <figure class="quotations-avatar-box">
+                  <img src="./assets/images/icon-quote.svg" alt="Quotation" width="60" data-quotations-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+                <h4 class="h4 quotations-item-title" data-quotations-title>Ralph Waldo Emerson</h4>
 
-                <div class="testimonials-text" data-testimonials-text>
+                <div class="quotations-text" data-quotations-text>
                   <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                    "Life is a journey, not a destination."
                   </p>
                 </div>
 
               </div>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+            <li class="quotations-item">
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+              <div class="content-card" data-quotations-item>
+
+                <figure class="quotations-avatar-box">
+                  <img src="./assets/images/icon-quote.svg" alt="Quotation" width="60" data-quotations-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+                <h4 class="h4 quotations-item-title" data-quotations-title>Albert Einstein</h4>
 
-                <div class="testimonials-text" data-testimonials-text>
+                <div class="quotations-text" data-quotations-text>
                   <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                    "Strive not to be a success, but rather to be of value."
                   </p>
                 </div>
 
               </div>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+            <li class="quotations-item" hidden>
+              <div class="content-card" data-quotations-item>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                <figure class="quotations-avatar-box">
+                  <img src="./assets/images/icon-quote.svg" alt="Quotation" width="60" data-quotations-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+                <h4 class="h4 quotations-item-title" data-quotations-title>Q3</h4>
 
-                <div class="testimonials-text" data-testimonials-text>
+                <div class="quotations-text" data-quotations-text>
                   <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                    Text.
                   </p>
                 </div>
 
               </div>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+            <li class="quotations-item" hidden>
+              <div class="content-card" data-quotations-item>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                <figure class="quotations-avatar-box">
+                  <img src="./assets/images/icon-quote.svg" alt="Quotation" width="60" data-quotations-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+                <h4 class="h4 quotations-item-title" data-quotations-title>Q4</h4>
 
-                <div class="testimonials-text" data-testimonials-text>
+                <div class="quotations-text" data-quotations-text>
                   <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                    Text.
                   </p>
                 </div>
 
@@ -409,14 +411,14 @@
 
 
         <!--
-          - testimonials modal
+          - quotations modal
         -->
 
         <div class="modal-container" data-modal-container>
 
           <div class="overlay" data-overlay></div>
 
-          <section class="testimonials-modal">
+          <section class="quotations-modal">
 
             <button class="modal-close-btn" data-modal-close-btn>
               <ion-icon name="close-outline"></ion-icon>
@@ -424,7 +426,7 @@
 
             <div class="modal-img-wrapper">
               <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                <img src="./assets/images/avatar-1.png" alt="name" width="80" data-modal-img>
               </figure>
 
               <img src="./assets/images/icon-quote.svg" alt="quote icon">
@@ -432,17 +434,13 @@
 
             <div class="modal-content">
 
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+              <h4 class="h3 modal-title" data-modal-title>Name</h4>
 
               <time datetime="2021-06-14">14 June, 2021</time>
 
               <div data-modal-text>
                 <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  comment
                 </p>
               </div>
 
@@ -454,48 +452,48 @@
 
 
         <!--
-          - clients
+          - #certifications
         -->
 
-        <section class="clients">
+        <section class="Certifications" hidden>
 
-          <h3 class="h3 clients-title">Clients</h3>
+          <h3 class="h3 Certifications-title">Certifications & Courses</h3>
 
-          <ul class="clients-list has-scrollbar">
+          <ul class="Certifications-list has-scrollbar">
 
-            <li class="clients-item">
+            <li class="Certifications-item">
               <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
+                <img src="./assets/images/cert aws arch asso.png" alt="Certifications logo">
               </a>
             </li>
 
-            <li class="clients-item">
+            <li class="Certifications-item">
               <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
+                <img src="./assets/images/cert aws security asso.png" alt="Certifications logo">
               </a>
             </li>
 
-            <li class="clients-item">
+            <li class="Certifications-item">
               <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
+                <img src="./assets/images/cert azure funda.png" alt="Certifications logo">
               </a>
             </li>
 
-            <li class="clients-item">
+            <li class="Certifications-item">
               <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
+                <img src="./assets/images/cert gcp asso.png" alt="Certifications logo">
               </a>
             </li>
 
-            <li class="clients-item">
+            <li class="Certifications-item">
               <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
+                <img src="./assets/images/cert kubernetes.png" alt="Certifications logo">
               </a>
             </li>
 
-            <li class="clients-item">
+            <li class="Certifications-item">
               <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
+                <img src="./assets/images/cert terraform.png" alt="Certifications logo">
               </a>
             </li>
 
@@ -533,42 +531,49 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
+              <h4 class="h4 timeline-item-title">Cloud computing and devops</h4>
 
-              <span>2007 — 2008</span>
+              <span>2025 - 2026</span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Bootcamp: Blockstellart - Spain
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
+              <h4 class="h4 timeline-item-title">API Architect in APIGEE and Microservices</h4>
 
-              <span>2006 — 2007</span>
+              <span>2022, Jan - Apr</span>
 
               <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
+                Course: Certificatic - Mexico, Instructor: Jovani Arzate
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
+              <h4 class="h4 timeline-item-title">Masters in Project Management</h4>
 
               <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
+                Catholic University of Honduras
               </p>
+
+              <span>2009</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Degree in Computer Science</h4>
+
+              <p class="timeline-text">
+                Catholic University of Honduras
+              </p>
+
+              <span>1999</span>
 
             </li>
 
@@ -590,42 +595,74 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Creative director</h4>
+              <h4 class="h4 timeline-item-title">Senior Solution Architect | Millicom (Tigo)</h4>
 
-              <span>2015 — Present</span>
+              <span>Oct 2014 — Jul 2022</span>
 
               <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
+                <b>- Event Bus: </b>Redesigned the event bus from request queuing to multithreaded processing,
+                increasing
+                capacity by more than 200% and enabling reliable processing of millions of requests, supported by
+                infrastructure
+                scaling.
+              </p>
+              <p class="timeline-text">
+                <b>- Financial Core Migration: </b> Led the technical migration of a digital wallet’s financial core,
+                mapping and
+                integrating 50+ services and platforms, achieving a migration with no critical failures and 99.9%
+                reliability.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Art director</h4>
+              <h4 class="h4 timeline-item-title">Development Manager | Ficohsa Bank</h4>
 
-              <span>2013 — 2015</span>
+              <span>Nov 2013 — Jul 2014</span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                <b>- Technical Project Leadership: </b> Led multidisciplinary teams delivering banking solutions under
+                tight
+                deadlines, coordinating cross-functional efforts to achieve rapid delivery.
+              </p>
+              <p class="timeline-text">
+                <b>- Banking Solutions: </b> Delivered multiple banking application development projects, from technical
+                design
+                through implementation and deployment.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Junior Software Architect | Millicom (Tigo)</h4>
+
+              <span>Apr 2012 — Nov 2013</span>
+
+              <p class="timeline-text">
+                <b>CRM Platform: </b>Initiated and architected a reusable platform addressing a CRM gap, enabling
+                architects and developers to rapidly build query and transactional interfaces for multiple business
+                solutions.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Web designer</h4>
+              <h4 class="h4 timeline-item-title">Head of Systems Development / Software Developer | Citibank Honduras.
+              </h4>
 
-              <span>2010 — 2013</span>
+              <span>Sep 2003 — Mar 2012 </span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                <b>- Bank Data Synchronization: </b> Developed a resilient interbank data synchronization solution with
+                automatic
+                reconnection and event-driven status notifications, improving reliability and operational visibility.
+              </p>
+              <p class="timeline-text">
+                <b>- Disaster Recovery: </b> Designed DRP (Disaster Recovery Plans) for critical banking applications,
+                defining
+                recovery strategies and continuity procedures.
               </p>
 
             </li>
@@ -633,7 +670,7 @@
           </ol>
 
         </section>
-
+        <!--
         <section class="skill">
 
           <h3 class="h3 skills-title">My skills</h3>
@@ -695,7 +732,7 @@
           </ul>
 
         </section>
-
+-->
       </article>
 
 
@@ -721,15 +758,23 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>AWS</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+              <button data-filter-btn>Azure</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn>Containers</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>IaC</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Others</button>
             </li>
 
           </ul>
@@ -753,15 +798,23 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>AWS</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Applications</button>
+                <button data-select-item>Azure</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web development</button>
+                <button data-select-item>Containers</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>IaC</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Others</button>
               </li>
 
             </ul>
@@ -770,25 +823,50 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li class="project-item active" data-filter-item data-category="AWS, IaC, Containers">
+              <a href="https://github.com/diegopineda77/aws-microservices-ecs" target="_blank"
+                rel="noopener noreferrer">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/Project 1 - Containers ECS Fargate EC2.png" alt="finance" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
+                <h3 class="project-title">AWS Containers ECS Fargate EC2</h3>
+                <p class="timeline-text-inside">
+                  Implementing Infrastructure as Code (IaC) in the AWS cloud, and the containerized deployment of
+                  microservices.
+                </p>
+                <p class="project-category">#AWS, #IaC, #Containers</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item active" data-filter-item data-category="Others">
+              <a href="https://github.com/diegopineda77/docker-mongo-app" target="_blank" rel="noopener noreferrer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-node-mongo.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Node.js application connects to a MongoDB</h3>
+                <p class="timeline-text-inside">
+                  This Node.js application connects to a MongoDB database and exposes a REST API.
+                </p>
+                <p class="project-category">#Node.js, #MongoDB</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="AWS" target="_blank"
+              rel="noopener noreferrer" hidden>
               <a href="#">
 
                 <figure class="project-img">
@@ -801,12 +879,13 @@
 
                 <h3 class="project-title">Orizon</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">#AWS</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="Web design, Applications">
+            <li class="project-item  active" data-filter-item data-category="AWS, Azure" target="_blank"
+              rel="noopener noreferrer" hidden>
               <a href="#">
 
                 <figure class="project-img">
@@ -819,12 +898,13 @@
 
                 <h3 class="project-title">Fundo</h3>
 
-                <p class="project-category">Web design, Applications</p>
+                <p class="project-category">#AWS, #Azure</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <li class="project-item  active" data-filter-item data-category="Azure, Containers" target="_blank"
+              rel="noopener noreferrer" hidden>
               <a href="#">
 
                 <figure class="project-img">
@@ -837,12 +917,13 @@
 
                 <h3 class="project-title">Brawlhalla</h3>
 
-                <p class="project-category">Applications</p>
+                <p class="project-category">#Azure, #Containers</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="IaC" target="_blank"
+              rel="noopener noreferrer" hidden>
               <a href="#">
 
                 <figure class="project-img">
@@ -855,12 +936,13 @@
 
                 <h3 class="project-title">DSM.</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">#IaC</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="AWS, Containers, IaC" target="_blank"
+              rel="noopener noreferrer" hidden>
               <a href="#">
 
                 <figure class="project-img">
@@ -873,12 +955,13 @@
 
                 <h3 class="project-title">MetaSpark</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">#AWS, #Containers, #IaC</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" data-filter-item data-category="AWS, Azure" target="_blank"
+              rel="noopener noreferrer" hidden>
               <a href="#">
 
                 <figure class="project-img">
@@ -891,12 +974,13 @@
 
                 <h3 class="project-title">Summary</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">#AWS, #Azure</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <li class="project-item  active" data-filter-item data-category="IaC" target="_blank"
+              rel="noopener noreferrer" hidden>
               <a href="#">
 
                 <figure class="project-img">
@@ -909,12 +993,13 @@
 
                 <h3 class="project-title">Task Manager</h3>
 
-                <p class="project-category">Applications</p>
+                <p class="project-category">#IaC</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" data-filter-item data-category="Containers" target="_blank"
+              rel="noopener noreferrer" hidden>
               <a href="#">
 
                 <figure class="project-img">
@@ -927,7 +1012,7 @@
 
                 <h3 class="project-title">Arrival</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">#Containers</p>
 
               </a>
             </li>
@@ -1032,7 +1117,8 @@
                   <h3 class="h3 blog-item-title">Design digest #80</h3>
 
                   <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis
+                    suscipit.
                   </p>
 
                 </div>
