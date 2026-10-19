@@ -842,8 +842,8 @@ main {
 }
 
 .Certifications-item img {
-  width: 100%;
-  filter: grayscale(1);
+  width: 90%;
+  /* filter: grayscale(1); */
   transition: var(--transition-1);
 }
 
@@ -1093,6 +1093,7 @@ main {
   width: 100%;
 }
 
+
 .project-img {
   position: relative;
   width: 100%;
@@ -1100,6 +1101,9 @@ main {
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
 }
 
 .project-img::before {
@@ -1147,7 +1151,8 @@ main {
 .project-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  /* object-fit: cover; */
   transition: var(--transition-1);
 }
 
@@ -1431,7 +1436,7 @@ textarea.form-input::-webkit-resizer {
 
   .project-img,
   .blog-banner-box {
-    height: auto;
+    height: contain;
   }
 
 }
@@ -2010,7 +2015,7 @@ textarea.form-input::-webkit-resizer {
   /* Certifications */
 
   .Certifications-item {
-    min-width: calc(25% - 38px);
+    min-width: calc(20% - 38px);
   }
 
 
